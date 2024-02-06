@@ -35,7 +35,13 @@ function media(){
     var num2 = document.getElementById("num10").valueAsNumber;
     var num3 = document.getElementById("num11").valueAsNumber;
     var res = (num1+num2+num3)/3;
-    
+  
+    var x = document.getElementById("resMedia");
+    if(res >= 7){
+        x.style.color = "green";
+    } else 
+        x.style.color = "red";
+      
     console.log(res);
     document.getElementById("resMedia").textContent = res.toFixed(2);
 }
