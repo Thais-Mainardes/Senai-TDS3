@@ -4,32 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Pag</title>
+    <title>New Page</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
-
-    <head>
-        <body>
-            <header>
-                <ul>
-                    <li><a href="#p1">Perfil 01</a></li>
-                    <li><a href="#p2">Perfil 02</a></li>
-                    <li><a href="#tec">Tecnologias</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </header>
-            <div id="p1" class="profile01">
-                <p>perfil 01</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#p1">Perfil 01</a></li>
+            <li><a href="#p2">Perfil 02</a></li>
+            <li><a href="#tec">Tecnologias</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </header>
+    <div id="p1" class="profile01">
+        <div class="left-profile01">
+            <div class="rel">
+                <img class="img-01" src="data:image/jpeg;base64,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" alt="Imagem de perfil">
             </div>
-            <div id="p2" class="profile02">
-                <p>perfil 02</p>
+        </div>
+        <div class="right-profile02">
+            <h2 class="nome-p1">Thais Mainardes</h2>
+            <p class="p-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae numquam consequuntur tempore quae rerum laboriosam soluta error? Doloribus suscipit, unde vel repudiandae nulla maiores dolore modi. Voluptas, modi dolorem?</p>
+        </div>
+    </div>
+    <div id="p2" class="profile02">
+        <p>perfil 02</p>
+    </div>
+    <div id="tec" class="tec">
+        <p>tecnologias</p>
+    </div>
+    <div id="contact" class="contact">
+        <div>
+            <div>
+                <h3>Contato</h3>
+                <p>Mande uma mensagem para nossa equipe!</p>
             </div>
-            <div id="tec" class="tec">
-                <p>tecnologias</p>
+            <div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea type="text" id="mensagem"></textarea>
+                </div>
             </div>
-            <div id="contact" class="contact">
-                <p>contato</p>
+            <button onclick="conferirMesagemWhatsApp()">Conferir dados inseridos</button>
+        </div>
+        <div>
+            <div>
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
             </div>
-
-        </body>
-    </head>
+            <button onclick="enviar()">ZAP</button>
+        </div>
+    </div>
+</body>
+</html>
